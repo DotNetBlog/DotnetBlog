@@ -8,9 +8,47 @@
     <script src="~/Contents/Scripts/bootstrap.min.js"></script>
 </head>
 <body>
-    <div> 
-        <h1>Welcome To DotNet</h1>
-        @RenderBody()
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#myPage">Logo</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#pricing">PRICING</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="row" style="margin-top:55px;margin-left:0px;margin-right:0px;overflow:auto;">
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" style="background-color:black;color:aqua;height:565px;width:12%;">
+            <ul>
+                <li>C#</li>
+                <li>C#</li>
+                <li>C#</li>
+                <li>C#</li>
+                <li>C#</li>
+                <li>C#</li>
+                <li>C#</li>
+            </ul>
+        </div>
+        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+            <div style="height:530px;">
+                @RenderBody()
+            </div>
+            <footer>
+                <p>&copy; @DateTime.Now.Year - My DotNetBlog</p>
+            </footer>
+        </div>
     </div>
 </body>
 </html>
